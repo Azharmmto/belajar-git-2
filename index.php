@@ -10,7 +10,20 @@
 </head>
 <body>
   
-  <h1>Daftar Barang</h1>
+  <nav>
+    <div class="judul">
+      Belajar GIT dan Murajaah Pembelajaran PHP
+    </div>
+  
+    <div class="waktu">
+      <?php 
+        // set default time zone
+        date_default_timezone_set("Asia/Makassar");
+
+        echo date("d / M - Y,  H:i:s",);
+      ?>
+    </div>
+  </nav>
 
 </body>
 </html>
