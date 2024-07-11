@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Daftar Barang</title>
 
-  <!-- css -->
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  
+
   <nav>
     <div class="judul">
-      Belajar GIT dan Murajaah Pembelajaran PHP
+      <h1>
+        <a href="#">Belajar GIT dan Murajaah Pembelajaran PHP</a>
+      </h1>
     </div>
   
     <div class="waktu">
