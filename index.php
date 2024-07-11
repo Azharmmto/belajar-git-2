@@ -34,20 +34,27 @@
     <table border="1">
       <thead>
         <tr>
+          <th>#</th>
           <th>Nama</th>
           <th>Kategori</th>
           <th>Deskripsi</th>
           <th>Harga</th>
+          <th>Action</th>
         </tr>
       </thead>
+
+      <tbody>
         <tr>
+          <td>1</td>
           <td>Pemarograam Web Dasar</td>
           <td>Buku Bacaan</td>
-          <td>Buku dengan judul Pemrograman web dasar, ditulis oleh Alan S.Kom penerbit informatika</td>
+          <td style="width: 40%;">Buku dengan judul Pemrograman web dasar, ditulis oleh Alan S.Kom penerbit informatika</td>
           <td>Rp. 63.000</td>
-        </tr>
-      <tbody>
-        
+          <td>
+            <button type="button">Hapus</button>
+            <button type="button">Ubah</button>
+          </td>
+        </tr>      
       </tbody>
     </table>
   </main>
