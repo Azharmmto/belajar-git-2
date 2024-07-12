@@ -44,16 +44,31 @@ main{
 }
 
 main header{
-  text-align: center;
+  text-align: left;
+  min-width: 100%;
 }
 
 main header h2{
-  font-weight: 500;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 main table {
   border-collapse: collapse;
   margin-top: 20px;
+}
+
+main table caption{
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+main table thead tr{
+  background-color: #f5ba6d;
+}
+
+table tr{
+  border-bottom: 1px solid #020e24;
 }
 
 table tr th{

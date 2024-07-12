@@ -1,3 +1,11 @@
+<?php 
+
+  // set default time zone
+  date_default_timezone_set("Asia/Makassar");
+  $waktu = date("d / M - Y,  H:i:s",);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,17 +20,12 @@
   <nav>
     <div class="judul">
       <h1>
-        <a href="#">Belajar GIT dan Murajaah Pembelajaran PHP</a>
+        <a href="#">Belajar GIT dan PHP</a>
       </h1>
-    </div>
   
+    </div>
     <div class="waktu">
-      <?php 
-        // set default time zone
-        date_default_timezone_set("Asia/Makassar");
-
-        echo date("d / M - Y,  H:i:s",);
-      ?>
+      <?= $waktu ?>
     </div>
   </nav>
 
@@ -31,7 +34,11 @@
       <h2>Daftar Barang</h2>
     </header>
 
-    <table border="1">
+    <table>
+      <caption>
+        Berikut daftar barang-barang aau produk yang telah Anda;
+      </caption>
+
       <thead>
         <tr>
           <th>#</th>
