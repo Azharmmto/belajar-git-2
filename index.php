@@ -2,7 +2,7 @@
 
   // set default time zone
   date_default_timezone_set("Asia/Makassar");
-  $waktu = date("d / M - Y,  H:i:s",);
+  $waktu = date("d / M - Y,  H:i",);
 
 ?>
 
@@ -31,21 +31,20 @@
 
   <main>
     <header>
-      <h2>Daftar Barang</h2>
+      <h2>
+          Daftar Harga<br>
+          <span>Kios Na'im</span>
+      </h2>
     </header>
 
     <table>
-      <caption>
-        Berikut daftar barang-barang aau produk yang telah Anda;
-      </caption>
-
       <thead>
         <tr>
           <th>#</th>
-          <th>Nama</th>
-          <th>Kategori</th>
-          <th>Deskripsi</th>
+          <th>Nama Barang</th>
+          <th>Kategori Barang</th>
           <th>Harga</th>
+          <th>Deskripsi</th>
           <th>Action</th>
         </tr>
       </thead>
