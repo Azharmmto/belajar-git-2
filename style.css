@@ -8,6 +8,15 @@ body{
   font-family: "montserrat", sans-serif;
 }
 
+/* style icons */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 350,
+  'GRAD' 0,
+  'opsz' 50
+}
+
 nav{
   display: flex;
   justify-content: space-around;
@@ -53,6 +62,22 @@ main header h2{
   text-transform: uppercase;
 }
 
+main header .tambah{
+  margin-top: 15px;
+}
+
+main header .tambah button{
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid #e9901c;
+  background-color: #e9901c;
+  color: #ffffff;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 main table {
   border-collapse: collapse;
   margin-top: 20px;
@@ -67,15 +92,42 @@ main table thead tr{
   background-color: #f5ba6d;
 }
 
-table tr{
+main table tr{
   border-bottom: 1px solid #020e24;
 }
 
-table tr th{
+main table tr th{
   text-align: left;
   font-weight: 550;
 }
 
 main table tr th, td{
   padding: 10px;
+}
+
+main table tbody tr td:nth-last-child(1){
+  display: flex;
+}
+
+main table tbody tr td:nth-last-child(1) button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main table tbody tr td:nth-last-child(1) button:nth-child(1){
+  background-color: #e42e0e;
+  color: #fff;
+  padding: 2px;
+  border: 1px solid #e42e0e;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+main table tbody tr td:nth-last-child(1) button:nth-child(2){
+  background-color: #e9901c;
+  color: #fff;
+  padding: 2px;
+  border: 1px solid #e9901c;
+  border-radius: 5px;
 }

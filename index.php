@@ -14,6 +14,9 @@
   <title>Daftar Barang</title>
 
   <link rel="stylesheet" href="style.css" />
+
+  <!-- icons google -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
 
@@ -35,6 +38,13 @@
           Daftar Harga<br>
           <span>Kios Na'im</span>
       </h2>
+
+      <div class="tambah">
+        <button type="button">
+          <span class="material-symbols-outlined">add</span>
+          Tambah Barang
+        </button>
+      </div>
     </header>
 
     <table>
@@ -57,8 +67,13 @@
           <td style="width: 40%;">Buku dengan judul Pemrograman web dasar, ditulis oleh Alan S.Kom penerbit informatika</td>
           <td>Rp. 63.000</td>
           <td>
-            <button type="button">Hapus</button>
-            <button type="button">Ubah</button>
+            <button type="button"> <!-- delete tombol-->
+              <span class="material-symbols-outlined">delete</span>
+            </button>
+
+            <button type="button"> <!-- update tombol-->
+             <span class="material-symbols-outlined"> edit_square</span>
+            </button>
           </td>
         </tr>      
       </tbody>
