@@ -2,7 +2,7 @@
 
   // set default time zone
   date_default_timezone_set("Asia/Makassar");
-  $waktu = date("d / M - Y,  H:i",);
+  $waktu = date("d / M - Y,  H:i");
 
   // connect database
   require "logic/connect.php";
@@ -46,10 +46,12 @@
       </h2>
 
       <div class="tambah">
-        <button type="button">
-          <span class="material-symbols-outlined">add</span>
-          Tambah Barang
-        </button>
+        <a href="app/tambah.php">
+          <button type="button">
+            <span class="material-symbols-outlined">add</span>
+            Tambah Barang
+          </button>
+        </a>
       </div>
     </header>
 

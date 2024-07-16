@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+a{
+  text-decoration: none;
+}
+
 body{
   font-family: "montserrat", sans-serif;
 }
@@ -76,6 +80,7 @@ main header .tambah button{
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 main table {
@@ -123,6 +128,7 @@ main table tbody tr td:nth-last-child(1) button:nth-child(1){
   border: 1px solid #e42e0e;
   border-radius: 5px;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 main table tbody tr td:nth-last-child(1) button:nth-child(2){
@@ -131,4 +137,5 @@ main table tbody tr td:nth-last-child(1) button:nth-child(2){
   padding: 2px;
   border: 1px solid #e9901c;
   border-radius: 5px;
+  cursor: pointer;
 }
