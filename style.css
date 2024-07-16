@@ -81,6 +81,7 @@ main header .tambah button{
 main table {
   border-collapse: collapse;
   margin-top: 20px;
+  min-width: 100%;
 }
 
 main table caption{
