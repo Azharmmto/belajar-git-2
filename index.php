@@ -4,6 +4,12 @@
   date_default_timezone_set("Asia/Makassar");
   $waktu = date("d / M - Y,  H:i",);
 
+  // connect database
+  require "logic/connect.php";
+  require "logic/functions.php";
+
+  $barang = query("SELECT * FROM barang");
+
 ?>
 
 <!DOCTYPE html>
@@ -60,22 +66,26 @@
       </thead>
 
       <tbody>
-        <tr>
-          <td>1</td>
-          <td>Pemarograam Web Dasar</td>
-          <td>Buku Bacaan</td>
-          <td style="width: 40%;">Buku dengan judul Pemrograman web dasar, ditulis oleh Alan S.Kom penerbit informatika</td>
-          <td>Rp. 63.000</td>
-          <td>
-            <button type="button"> <!-- delete tombol-->
-              <span class="material-symbols-outlined">delete</span>
-            </button>
+        <?php foreach($barang as $barangs) : ?>
+          <?php $i = 1 ?>
+          <tr>
+            <td><?= $i ?></td>
+            <td><?= $barangs["nama"] ?></td>
+            <td><?= $barangs["kategori"] ?></td>
+            <td><?= "Rp" . number_format($barangs["harga"]) ?></td>
+            <td><?= $barangs["deskripsi"] ?></td>
+            <td>
+              <button type="button"> <!-- delete tombol-->
+                <span class="material-symbols-outlined">delete</span>
+              </button>
 
-            <button type="button"> <!-- update tombol-->
-             <span class="material-symbols-outlined"> edit_square</span>
-            </button>
-          </td>
-        </tr>      
+              <button type="button"> <!-- update tombol-->
+              <span class="material-symbols-outlined"> edit_square</span>
+              </button>
+            </td>
+          </tr>
+          <?php $i++ ?>
+        <?php endforeach ?>      
       </tbody>
     </table>
   </main>

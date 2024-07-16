@@ -4,8 +4,8 @@
   $hostName = "localhost";
   $userName = "root";
   $password = "";
-  $dbName = "belajar_git";
+  $dbName = "kios_naim";
 
-  mysqli_connect($hostName, $userName, $password, $dbName);
+  $conn = mysqli_connect($hostName, $userName, $password, $dbName);
 
 ?>
