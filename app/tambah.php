@@ -47,17 +47,32 @@
         <label for="kategori">Kategori Barang</label>
         <select id="kategori"> 
           <option selected>Pilih kategori...</option>
-          <option value="Biografi">Biografi</option>
-          <option value="Cerita Pendek">Cerita Pendek</option>
-          <option value="Ilmu Pengetahuan">Ilmu Pengetahuan</option>
-          <option value="Pembelajaran">Pembelajaran</option>
-          <option value="Sejarah">Sejarah</option>
-          <option value="Teknologi">Teknologi</option>
-          <option value="Fiksi Ilmiah">Fiksi Ilmiah</option>
-          <option value="Novel">Majalah</option>
-          <option value="Novel">Komik</option>
-          <option value="Novel">Novel</option>
+          <option value="Biografi">Makanan dan Minuman</option>
+          <option value="Cerita Pendek">Bahan Pokok</option>
+          <option value="Ilmu Pengetahuan">Bumbu Dapur </option>
+          <option value="Pembelajaran">Produk Susu</option>
+          <option value="Sejarah">Produk Kebersihan dan Kesehatan</option>
+          <option value="Teknologi">Korek Api</option>
+          <option value="Fiksi Ilmiah">Alat Tulis</option>
+          <option value="Novel">Ice Cream</option>
+          <option value="Novel">Obat Obatan</option>
+          <option value="Novel">Gula-gula</option>
         </select>
+      </div>
+
+      <div class="label">
+        <label for="harga">Harga Barang</label>
+        <input type="number" id="harga" name="harga" required />
+      </div>
+
+      <div class="label">
+        <label for="deskripsi">Deskripsi</label>
+        <textarea name="deskripsi" id="deskripsi" cols="30" rows="10"></textarea>
+      </div>
+
+      <div class="tombol">
+        <button type="submit" name="tambah">Tambah</button>
+        <button type="reset">Batal</button>
       </div>
     </form>
   </main>
