@@ -21,6 +21,13 @@
 
   <!-- icons google -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <!-- css bootstrap -->
+  <link rel="stylesheet" href="../bootstrap_533/css/bootstrap.min.css" />
+
+  <!-- my css -->
+  <link rel="stylesheet" href="../style.css" />
+
 </head>
 <body>
 
@@ -36,16 +43,22 @@
     </div>
   </nav>
 
-  <main>
+  <div class="container mt-4 shadow-sm p-5" style="width: 60%;">
+    <div class="row">
+      <div class="col">
+        <h2 class="fs-3">Tambah Barang</h2>
+      </div>
+    </div>
+
     <form action="" method="post">
-      <div class="label">
-        <label for="nama">Nama Barang</label>
-        <input type="text" id="nama" name="nama" required />
+      <div class="mb-3">
+        <label for="nama" class="form-label">Nama Barang</label>
+        <input type="text" class="form-control" id="nama" placeholder="Masukkan nama barang..." required>
       </div>
 
-      <div class="label-select">
+      <div class="mb-3">
         <label for="kategori">Kategori Barang</label>
-        <select id="kategori"> 
+        <select class="form-select" aria-label="Default select example" id="kategori" required>
           <option selected>Pilih kategori...</option>
           <option value="Biografi">Makanan dan Minuman</option>
           <option value="Cerita Pendek">Bahan Pokok</option>
@@ -56,25 +69,28 @@
           <option value="Fiksi Ilmiah">Alat Tulis</option>
           <option value="Novel">Ice Cream</option>
           <option value="Novel">Obat Obatan</option>
-          <option value="Novel">Gula-gula</option>
+          <option value="Novel">Permen</option>
         </select>
       </div>
 
-      <div class="label">
-        <label for="harga">Harga Barang</label>
-        <input type="number" id="harga" name="harga" required />
+      <div class="mb-3">
+        <label for="nama" class="form-label">Harga Barang</label>
+        <input type="number" class="form-control" id="nama" placeholder="Masukkan harga barang..." required>
       </div>
 
-      <div class="label">
-        <label for="deskripsi">Deskripsi</label>
-        <textarea name="deskripsi" id="deskripsi" cols="30" rows="10"></textarea>
+      <div class="mb-3">
+        <label for="deskripsi" class="form-label">Deskripsi Barang</label>
+        <textarea class="form-control" id="deskripsi" rows="3" placeholder="Masukkan deksripsi barang..."></textarea>
       </div>
 
-      <div class="tombol">
-        <button type="submit" name="tambah">Tambah</button>
-        <button type="reset">Batal</button>
+      <div class="ms-auto">
+        <button type="submit" name="tambah" class="btn btn-info">Tambah</button>
+        <button type="reset" class="btn btn-warning">Batal</button>
       </div>
     </form>
-  </main>
+  </div>
+
+  <!-- js boostrap -->
+  <script src="../bootstrap_533/js/bootstrap.min.js"></script>
 </body>
 </html>
