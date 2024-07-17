@@ -43,10 +43,12 @@
     </div>
   </nav>
 
-  <div class="container mt-4 shadow-sm p-5" style="width: 60%;">
+  <div class="container mt-4 shadow-sm px-5 py-5" style="width: 60%;">
+
+
     <div class="row">
       <div class="col">
-        <h2 class="fs-3">Tambah Barang</h2>
+        <h2 class="fs-3 fw-bold">Tambah Barang</h2>
       </div>
     </div>
 
@@ -84,8 +86,13 @@
       </div>
 
       <div class="ms-auto">
-        <button type="submit" name="tambah" class="btn btn-info fw-medium">Tambah</button>
-        <button type="reset" class="btn btn-warning">Batal</button>
+        <button type="submit" name="tambah" class="btn btn-info fw-medium me-2">Tambah</button>
+        
+        <a href="../index.php">
+          <button type="button" class="btn btn-warning">
+            Batal
+          </button>
+        </a>
       </div>
     </form>
   </div>
