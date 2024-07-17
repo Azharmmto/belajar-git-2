@@ -52,12 +52,12 @@
 
     <form action="" method="post">
       <div class="mb-3">
-        <label for="nama" class="form-label">Nama Barang</label>
+        <label for="nama" class="form-label fw-medium">Nama Barang</label>
         <input type="text" class="form-control" id="nama" placeholder="Masukkan nama barang..." required>
       </div>
 
       <div class="mb-3">
-        <label for="kategori">Kategori Barang</label>
+        <label for="kategori" class="form-label fw-medium">Kategori Barang</label>
         <select class="form-select" aria-label="Default select example" id="kategori" required>
           <option selected>Pilih kategori...</option>
           <option value="Biografi">Makanan dan Minuman</option>
@@ -74,17 +74,17 @@
       </div>
 
       <div class="mb-3">
-        <label for="nama" class="form-label">Harga Barang</label>
-        <input type="number" class="form-control" id="nama" placeholder="Masukkan harga barang..." required>
+        <label for="harga" class="form-label fw-medium">Harga Barang</label>
+        <input type="number" class="form-control" id="harga" placeholder="Masukkan harga barang..." required>
       </div>
 
       <div class="mb-3">
-        <label for="deskripsi" class="form-label">Deskripsi Barang</label>
+        <label for="deskripsi" class="form-label fw-medium">Deskripsi Barang</label>
         <textarea class="form-control" id="deskripsi" rows="3" placeholder="Masukkan deksripsi barang..."></textarea>
       </div>
 
       <div class="ms-auto">
-        <button type="submit" name="tambah" class="btn btn-info">Tambah</button>
+        <button type="submit" name="tambah" class="btn btn-info fw-medium">Tambah</button>
         <button type="reset" class="btn btn-warning">Batal</button>
       </div>
     </form>
@@ -92,5 +92,24 @@
 
   <!-- js boostrap -->
   <script src="../bootstrap_533/js/bootstrap.min.js"></script>
+
+  <!-- my js -->
+  <script>
+    // Fungsi untuk memformat angka dengan titik sebagai pemisah ribuan
+    function formatNumberWithDots(value) {
+        return value.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    }
+
+    document.getElementById('harga').addEventListener('input', function (e) {
+        // Hapus semua karakter yang bukan angka
+        let value = e.target.value.replace(/[^\d]/g, '');
+        
+        // Format angka dengan titik
+        value = formatNumberWithDots(value);
+        
+        // Tampilkan hasilnya di input
+        e.target.value = value;
+    });
+  </script>
 </body>
 </html>
