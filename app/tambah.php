@@ -60,29 +60,29 @@
 
       <div class="mb-3">
         <label for="kategori" class="form-label fw-medium">Kategori Barang</label>
-        <select class="form-select" aria-label="Default select example" id="kategori" required>
+        <select class="form-select" aria-label="Default select example" id="kategori" name="kategori" required>
           <option selected>Pilih kategori...</option>
-          <option value="Biografi">Makanan dan Minuman</option>
-          <option value="Cerita Pendek">Bahan Pokok</option>
-          <option value="Ilmu Pengetahuan">Bumbu Dapur </option>
-          <option value="Pembelajaran">Produk Susu</option>
-          <option value="Sejarah">Produk Kebersihan dan Kesehatan</option>
-          <option value="Teknologi">Korek Api</option>
-          <option value="Fiksi Ilmiah">Alat Tulis</option>
-          <option value="Novel">Ice Cream</option>
-          <option value="Novel">Obat Obatan</option>
-          <option value="Novel">Permen</option>
+          <option value="Makanan dan Minuman">Makanan dan Minuman</option>
+          <option value="Bahan Pokok">Bahan Pokok</option>
+          <option value="Bumbu Dapur">Bumbu Dapur </option>
+          <option value="Bumbu Dapur">Bumbu Dapuru</option>
+          <option value="Produk Kebersihan dan Kesehatan">Produk Kebersihan dan Kesehatan</option>
+          <option value="Korek Api">Korek Api</option>
+          <option value="Alat Tulis">Alat Tulis</option>
+          <option value="Ice Cream">Ice Cream</option>
+          <option value="Obat Obatan">Obat Obatan</option>
+          <option value="Permen">Permen</option>
         </select>
       </div>
 
       <div class="mb-3">
         <label for="harga" class="form-label fw-medium">Harga Barang</label>
-        <input type="number" class="form-control" id="harga" placeholder="Masukkan harga barang..." required>
+        <input type="number" class="form-control" id="harga" placeholder="Masukkan harga barang..." name="harga" required>
       </div>
 
       <div class="mb-3">
         <label for="deskripsi" class="form-label fw-medium">Deskripsi Barang</label>
-        <textarea class="form-control" id="deskripsi" rows="3" placeholder="Masukkan deksripsi barang..."></textarea>
+        <textarea class="form-control" id="deskripsi" rows="3" placeholder="Masukkan deksripsi barang..." name="deskripsi"></textarea>
       </div>
 
       <div class="ms-auto">
