@@ -1,0 +1,6 @@
+.container form input, textarea, select{
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: 2px solid  #eee !important;
+}

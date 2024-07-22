@@ -121,7 +121,7 @@ main table tbody tr td:nth-last-child(1) button{
   justify-content: center;
 }
 
-main table tbody tr td:nth-last-child(1) button:nth-child(1){
+main table tbody tr td:nth-last-child(1) a:nth-child(1) button{
   background-color: #e42e0e;
   color: #fff;
   padding: 2px;
@@ -131,7 +131,7 @@ main table tbody tr td:nth-last-child(1) button:nth-child(1){
   cursor: pointer;
 }
 
-main table tbody tr td:nth-last-child(1) button:nth-child(2){
+main table tbody tr td:nth-last-child(1) a:nth-child(2) button{
   background-color: #e9901c;
   color: #fff;
   padding: 2px;

@@ -93,9 +93,11 @@
                 </button>
               </a>
 
-              <button type="button"> <!-- update tombol-->
-              <span class="material-symbols-outlined"> edit_square</span>
-              </button>
+              <a href="app/update.php?id=<?= $barangs["id"] ?> ">
+                <button type="button"> <!-- update tombol-->
+                  <span class="material-symbols-outlined"> edit_square</span>
+                </button>
+              </a>
             </td>
           </tr>
           <?php $i++ ?>
