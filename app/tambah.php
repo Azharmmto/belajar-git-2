@@ -8,6 +8,12 @@
   require "../logic/connect.php";
   require "../logic/functions.php";
 
+  if(isset($_POST["tambah"])){
+
+    tambah($_POST) > 0 ? $addBarang = true : $addBarang = false;
+
+  }
+
 ?>
 
 <!DOCTYPE html>
@@ -44,8 +50,6 @@
   </nav>
 
   <div class="container mt-4 shadow-sm px-5 py-5" style="width: 60%;">
-
-
     <div class="row">
       <div class="col">
         <h2 class="fs-3 fw-bold">Tambah Barang</h2>
@@ -55,7 +59,7 @@
     <form action="" method="post">
       <div class="mb-3">
         <label for="nama" class="form-label fw-medium">Nama Barang</label>
-        <input type="text" class="form-control" id="nama" placeholder="Masukkan nama barang..." required>
+        <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukkan nama barang..." required>
       </div>
 
       <div class="mb-3">
@@ -72,6 +76,7 @@
           <option value="Ice Cream">Ice Cream</option>
           <option value="Obat Obatan">Obat Obatan</option>
           <option value="Permen">Permen</option>
+          <option value="Voucher">Voucher</option>
         </select>
       </div>
 
@@ -103,20 +108,20 @@
   <!-- my js -->
   <script>
     // Fungsi untuk memformat angka dengan titik sebagai pemisah ribuan
-    function formatNumberWithDots(value) {
-        return value.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-    }
+    // function formatNumberWithDots(value) {
+    //     return value.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    // }
 
-    document.getElementById('harga').addEventListener('input', function (e) {
-        // Hapus semua karakter yang bukan angka
-        let value = e.target.value.replace(/[^\d]/g, '');
+    // document.getElementById('harga').addEventListener('input', function (e) {
+    //     // Hapus semua karakter yang bukan angka
+    //     let value = e.target.value.replace(/[^\d]/g, '');
         
-        // Format angka dengan titik
-        value = formatNumberWithDots(value);
+    //     // Format angka dengan titik
+    //     value = formatNumberWithDots(value);
         
-        // Tampilkan hasilnya di input
-        e.target.value = value;
-    });
+    //     // Tampilkan hasilnya di input
+    //     e.target.value = value;
+    // });
   </script>
 </body>
 </html>

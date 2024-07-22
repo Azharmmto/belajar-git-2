@@ -1,5 +1,7 @@
 <?php 
 
+  session_start();
+
   // set default time zone
   date_default_timezone_set("Asia/Makassar");
   $waktu = date("d / M - Y,  H:i");
@@ -25,6 +27,14 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
+
+  <?php if(isset($_SESSION["hapusBerhasil"])) : ?>
+
+    <script>
+      alert("Hapus Berhasil");
+    </script>
+
+  <?php endif ?>
 
   <nav>
     <div class="judul">
@@ -68,8 +78,8 @@
       </thead>
 
       <tbody>
+        <?php $i = 1 ?>
         <?php foreach($barang as $barangs) : ?>
-          <?php $i = 1 ?>
           <tr>
             <td><?= $i ?></td>
             <td><?= $barangs["nama"] ?></td>
@@ -77,9 +87,11 @@
             <td><?= "Rp" . number_format($barangs["harga"]) ?></td>
             <td><?= $barangs["deskripsi"] ?></td>
             <td>
-              <button type="button"> <!-- delete tombol-->
-                <span class="material-symbols-outlined">delete</span>
-              </button>
+              <a href="app/hapus.php?id=<?= $barangs["id"] ?> ">
+                <button type="button"> <!-- delete tombol-->
+                  <span class="material-symbols-outlined">delete</span>
+                </button>
+              </a>
 
               <button type="button"> <!-- update tombol-->
               <span class="material-symbols-outlined"> edit_square</span>
