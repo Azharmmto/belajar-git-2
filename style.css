@@ -111,6 +111,10 @@ main table tr th, td{
   padding: 10px;
 }
 
+main table tbody tr td:nth-child(2){
+  text-transform: capitalize;
+}
+
 main table tbody tr td:nth-last-child(1){
   display: flex;
 }
