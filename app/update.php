@@ -1,5 +1,7 @@
 <?php 
 
+  session_start();
+
   // set default time zone
   date_default_timezone_set("Asia/Makassar");
   $waktu = date("d / M - Y,  H:i");
@@ -11,6 +13,15 @@
   $id = $_GET['id'];
 
   $barang = query("SELECT * FROM barang WHERE id = $id")[0];
+
+  if(isset($_POST["update"])){
+
+    update($_POST) > 0 ? $_SESSION["updateBerhasil"] = true : $_SESSION["updateBerhasil"] = false;
+
+    // kembali ke halaman index
+    header("Location: ../index.php");
+
+  }
 
 ?>
 
@@ -56,6 +67,9 @@
     </div>
 
     <form action="" method="post">
+
+      <input type="hidden" name="id" value="<?= $barang["id"] ?>">
+
       <div class="mb-3">
         <label for="nama" class="form-label fw-medium">Nama Barang</label>
         <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukkan nama barang..." value="<?= $barang["nama"] ?>" />

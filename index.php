@@ -22,19 +22,20 @@
   <title>Daftar Barang</title>
 
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="app/css/tambah.css" />
 
   <!-- icons google -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
 
-  <?php if(isset($_SESSION["hapusBerhasil"])) : ?>
+  <?php if(isset($_SESSION["updateBerhasil"])) : ?>   
+    <div class="alert-berhasil shadow" id="alert-berhasil">
+      <span>Barang berhasil diubah!</span>
 
-    <script>
-      alert("Hapus Berhasil");
-    </script>
-
-    <?php unset($_SESSION["hapusBerhasil"]); ?>
+      <span class="material-symbols-outlined close" id="close-alert" style="cursor: pointer;">close</span>
+    </div>
+    <?php unset($_SESSION["updateBerhasil"]); ?>
   <?php endif ?>
 
   <nav>
@@ -106,5 +107,18 @@
     </table>
   </main>
 
+  <!-- my js -->
+  <script>
+    const alertBerhasil = document.getElementById("alert-berhasil");
+    const closeAlert = document.getElementById("close-alert");
+
+    closeAlert.addEventListener("click", function() {
+      alertBerhasil.style.display = "none";
+
+      setTimeout( function(){
+        alertBerhasil.style.display = "none";
+      }, 5000);
+    });
+  </script>
 </body>
 </html>
