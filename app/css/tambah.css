@@ -4,6 +4,30 @@
   box-sizing: border-box;
 }
 
-main .description-container .description{
-  display: none;
+.container .alert-berhasil{
+  padding: 10px;
+  background-color: #45f5a6;
+  margin: 10px 0;
+  border-radius: 5px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .alert-berhasil .close{
+padding: 3px;
+border-radius: 5px;
+transition: 0.1s all;
+font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+
+}
+
+.container .alert-berhasil .close:hover{
+  background-color: #ff0000;
+  color: #fff;
 }

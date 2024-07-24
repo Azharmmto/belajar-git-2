@@ -33,6 +33,7 @@
 
   <!-- my css -->
   <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="css/tambah.css" />
 
 </head>
 <body>
@@ -49,7 +50,18 @@
     </div>
   </nav>
 
-  <div class="container mt-4 shadow-sm px-5 py-5" style="width: 60%;">
+  <div class="container mt-4 shadow-sm px-5 py-3" style="width: 60%;">
+
+    <?php if(isset($_POST["tambah"])) : ?>
+      <?php if(isset($addBarang)) : ?>
+        <div class="alert-berhasil shadow" id="alert-berhasil">
+          <span>Barang berhasil ditambahkan!</span>
+
+          <span class="material-symbols-outlined close" id="close-alert" style="cursor: pointer;">close</span>
+        </div>
+      <?php endif ?>
+    <?php endif ?>
+
     <div class="row">
       <div class="col">
         <h2 class="fs-3 fw-bold">Tambah Barang</h2>
@@ -107,21 +119,13 @@
 
   <!-- my js -->
   <script>
-    // Fungsi untuk memformat angka dengan titik sebagai pemisah ribuan
-    // function formatNumberWithDots(value) {
-    //     return value.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-    // }
+    const alertBerhasil = document.getElementById("alert-berhasil");
+    const closeAlert = document.getElementById("close-alert");
 
-    // document.getElementById('harga').addEventListener('input', function (e) {
-    //     // Hapus semua karakter yang bukan angka
-    //     let value = e.target.value.replace(/[^\d]/g, '');
-        
-    //     // Format angka dengan titik
-    //     value = formatNumberWithDots(value);
-        
-    //     // Tampilkan hasilnya di input
-    //     e.target.value = value;
-    // });
+    closeAlert.addEventListener("click", function() {
+      alertBerhasil.style.display = "none";
+    });
   </script>
+</html>
 </body>
 </html>
