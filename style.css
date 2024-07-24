@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+:root{
+  --color-btnWarna: #e9901c;
+}
+
 a{
   text-decoration: none;
 }
@@ -74,20 +78,27 @@ main header .tambah{
 main header .tambah button{
   padding: 7px;
   border-radius: 5px;
-  border: 1px solid #e9901c;
-  background-color: #e9901c;
+  border: 1px solid var(--color-btnWarna);
+  background-color: var(--color-btnWarna);
   color: #ffffff;
   font-weight: 300;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: 0.2s all;
+}
+
+main header .tambah button:hover{
+  border: 1px solid #cf7e13;
+  background-color: #ca790f;
 }
 
 main table {
   border-collapse: collapse;
   margin-top: 20px;
   min-width: 100%;
+  font-size: 0.9rem;
 }
 
 main table caption{
@@ -128,20 +139,32 @@ main table tbody tr td:nth-last-child(1) button{
 }
 
 main table tbody tr td:nth-last-child(1) a:nth-child(1) button{
-  background-color: #e42e0e;
+  background-color: var(--color-btnWarna);
   color: #fff;
-  padding: 2px;
-  border: 1px solid #e42e0e;
+  padding: 1px;
+  border: 1px solid var(--color-btnWarna);
   border-radius: 5px;
   margin-right: 10px;
   cursor: pointer;
+  transition: 0.2s all;
+}
+
+main table tbody tr td:nth-last-child(1) a:nth-child(1) button:hover{
+  background-color: #ca790f;
+  border: 1px solid #ca790f;
 }
 
 main table tbody tr td:nth-last-child(1) a:nth-child(2) button{
-  background-color: #e9901c;
+  background-color: #e42e0e;
   color: #fff;
-  padding: 2px;
-  border: 1px solid #e9901c;
+  padding: 1px;
+  border: 1px solid #e42e0e;
   border-radius: 5px;
   cursor: pointer;
+  transition: 0.2s all;
+}
+
+main table tbody tr td:nth-last-child(1) a:nth-child(2) button:hover{
+  background-color: #ac1f07;
+  border: 1px solid #ac1f07;
 }

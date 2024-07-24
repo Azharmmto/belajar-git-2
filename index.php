@@ -87,15 +87,15 @@
             <td><?= "Rp" . number_format($barangs["harga"]) ?></td>
             <td><?= $barangs["deskripsi"] ?></td>
             <td>
-              <a href="app/hapus.php?id=<?= $barangs["id"] ?> ">
-                <button type="button"> <!-- delete tombol-->
-                  <span class="material-symbols-outlined">delete</span>
-                </button>
-              </a>
-
               <a href="app/update.php?id=<?= $barangs["id"] ?> ">
                 <button type="button"> <!-- update tombol-->
                   <span class="material-symbols-outlined"> edit_square</span>
+                </button>
+              </a>
+
+              <a href="app/hapus.php?id=<?= $barangs["id"] ?> ">
+                <button type="button"> <!-- delete tombol-->
+                  <span class="material-symbols-outlined">delete</span>
                 </button>
               </a>
             </td>
