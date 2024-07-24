@@ -34,12 +34,13 @@
       alert("Hapus Berhasil");
     </script>
 
+    <?php unset($_SESSION["hapusBerhasil"]); ?>
   <?php endif ?>
 
   <nav>
     <div class="judul">
       <h1>
-        <a href="#">Belajar GIT dan PHP</a>
+        <a href="#">Kios Na'im</a>
       </h1>
   
     </div>
@@ -51,8 +52,7 @@
   <main>
     <header>
       <h2>
-          Daftar Harga<br>
-          <span>Kios Na'im</span>
+          Daftar Harga 
       </h2>
 
       <div class="tambah">

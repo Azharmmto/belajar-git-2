@@ -63,7 +63,8 @@ main header{
 
 main header h2{
   font-weight: 600;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-size: 2rem;
 }
 
 main header .tambah{
@@ -99,12 +100,13 @@ main table thead tr{
 }
 
 main table tr{
-  border-bottom: 1px solid #020e24;
+  border-bottom: 1px solid #c7c8c9;
 }
 
 main table tr th{
   text-align: left;
   font-weight: 550;
+  border-bottom: 1px solid #000;
 }
 
 main table tr th, td{
