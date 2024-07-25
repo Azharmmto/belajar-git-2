@@ -94,7 +94,7 @@
                 </button>
               </a>
 
-              <a href="app/hapus.php?id=<?= $barangs["id"] ?> ">
+              <a href="app/hapus.php?id=<?= $barangs["id"] ?>" onclick="return confirm('Yakin ingin menghapus barang, <?= $barangs['nama'] ?>')">
                 <button type="button"> <!-- delete tombol-->
                   <span class="material-symbols-outlined">delete</span>
                 </button>
