@@ -50,7 +50,7 @@
   <nav>
     <div class="judul">
       <h1>
-        <a href="#">Belajar GIT dan PHP</a>
+        <a href="#">Kios Na'im</a>
       </h1> 
     </div>
 
@@ -130,14 +130,18 @@
         <textarea class="form-control" id="deskripsi" rows="3" placeholder="Masukkan deksripsi barang..." name="deskripsi"><?= $barang["deskripsi"] ?></textarea>
       </div>
 
-      <div class="ms-auto">
-        <button type="submit" name="update" class="btn btn-info fw-medium me-2">Update</button>
-        
+      <div class="ms-auto d-flex justify-content-between">
         <a href="../index.php">
-          <button type="button" class="btn btn-warning">
-            Batal
+          <button type="button" class="btn btn-warning d-flex align-items-center">
+            <span class="material-symbols-outlined">arrow_back</span>
+            Kembali
           </button>
         </a>
+
+        <button type="submit" name="update" class="btn btn-info fw-medium d-flex align-items-center">
+          <span class="material-symbols-outlined update">update</span>
+          Ubah
+        </button>
       </div>
     </form>
   </div>

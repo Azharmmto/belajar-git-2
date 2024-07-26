@@ -38,6 +38,17 @@
     <?php unset($_SESSION["updateBerhasil"]); ?>
   <?php endif ?>
 
+    <?php if(isset($_SESSION["hapusBerhasil"])) : ?>   
+      <div class="shadow hapus-berhasil" id="alert-berhasil">
+        <span>Barang berhasil dihapus!</span>
+
+        <span class="material-symbols-outlined close" id="close-alert" style="cursor: pointer;">close</span>
+      </div>
+    <?php unset($_SESSION["hapusBerhasil"]); ?>
+  <?php endif ?>
+
+
+
   <nav>
     <div class="judul">
       <h1>
