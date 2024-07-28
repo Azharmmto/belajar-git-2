@@ -21,8 +21,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Daftar Barang</title>
 
+  <!-- my css -->
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="app/css/tambah.css" />
+
+  <!-- css datatable -->
+  <link href="https://cdn.datatables.net/v/dt/dt-2.1.2/datatables.min.css" rel="stylesheet">
+ 
 
   <!-- icons google -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -77,7 +82,7 @@
       </div>
     </header>
 
-    <table>
+    <table id="myTable">
       <thead>
         <tr>
           <th>#</th>
@@ -131,5 +136,30 @@
       }, 5000);
     });
   </script>
+
+  <!-- js data table -->
+  <script src="https://cdn.datatables.net/2.1.2/js/dataTables.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://cdn.datatables.net/2.0.7/js/dataTables.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#myTable').DataTable({
+        "columns": [
+            { "data": "#" },
+            { "data": "Nama Barang" },
+            { "data": "Kategori Barang" },
+            { "data": "Harga" },
+            { "data": "Deskripsi" },
+            { "data": "Action" }
+        ],
+
+        "language": {
+            "search": "",
+            "searchPlaceholder": "Cari barang..."
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>
