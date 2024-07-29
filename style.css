@@ -169,12 +169,8 @@ main table {
   border-collapse: collapse;
   margin-top: 20px;
   min-width: 100%;
-  font-size: 0.9rem;
-}
-
-main table caption{
+  font-size: 1rem;
   text-align: left;
-  margin-bottom: 15px;
 }
 
 main table thead tr{
@@ -183,6 +179,10 @@ main table thead tr{
 
 main table tr{
   border-bottom: 1px solid #c7c8c9;
+}
+
+main table tbody tr:hover{
+  background-color: #f2f2f2;
 }
 
 main table tr th{
@@ -197,6 +197,11 @@ main table tr th, td{
 
 main table tbody tr td:nth-child(2){
   text-transform: capitalize;
+}
+
+main table tbody tr td:nth-child(4){
+  color: #052401;
+  font-weight: 500;
 }
 
 main table tbody tr td:nth-last-child(1){
