@@ -77,46 +77,23 @@
 
       <div class="mb-3">
         <label for="kategori" class="form-label fw-medium">Kategori Barang</label>
-        <select class="form-select" aria-label="Default select example" id="kategori" name="kategori" required>
-          <option value="Makanan dan Minuman" <?= $barang["kategori"] === 'Makanan dan Minuman' ? 'selected' : '' ?>>
-            Makanan dan Minuman
-          </option>
-
-          <option value="Bahan Pokok" <?= $barang["kategori"] === 'Bahan Pokok' ? 'selected' : '' ?>>
-            Bahan Pokok
-          </option>
-
-          <option value="Bumbu Dapur" <?= $barang["kategori"] === 'Bumbu Dapur' ? 'selected' : '' ?>>
-            Bumbu Dapur 
-          </option>
-
-          <option value="Produk Kebersihan dan Kesehatan" <?= $barang["kategori"] === 'Produk Kebersihan dan Kesehatan' ? 'selected' : '' ?>>
-            Produk Kebersihan dan Kesehatan
-          </option>
-
-          <option value="Korek Api" <?= $barang["kategori"] === 'Korek Api' ? 'selected' : '' ?>>
-            Korek Api
-          </option>
-
-          <option value="Alat Tulis" <?= $barang["kategori"] === 'Alat Tulis' ? 'selected' : '' ?>>
-            Alat Tulis
-          </option>
-
-          <option value="Ice Cream" <?= $barang["kategori"] === 'Ice Cream' ? 'selected' : '' ?>>
-            Ice Cream
-          </option>
-
-          <option value="Obat Obatan" <?= $barang["kategori"] === 'Obat Obatan' ? 'selected' : '' ?>>
-            Obat Obatan
-          </option>
-
-          <option value="Permen" <?= $barang["kategori"] === 'Permen' ? 'selected' : '' ?>>
-            Permen
-          </option>
-
-          <option value="Voucher" <?= $barang["kategori"] === 'Voucher' ? 'selected' : '' ?>>
-            Voucher
-          </option>
+          <select class="form-select" aria-label="Default select example" id="kategori" name="kategori" required>
+            <option selected>Pilih kategori...</option>
+            <option value="Makanan dan Minuman" <?= $barang["kategori"] === 'Makanan dan Minuman' ? 'selected' : '' ?>>Makanan dan Minuman</option>
+            <option value="Bahan Pokok" <?= $barang["kategori"] === 'Bahan Pokok' ? 'selected' : '' ?>>Bahan Pokok</option>
+            <option value="Bumbu Dapur" <?= $barang["kategori"] === 'Bumbu Dapur' ? 'selected' : '' ?>>Bumbu Dapur</option>
+            <option value="Produk Susu" <?= $barang["kategori"] === 'Produk Susu' ? 'selected' : '' ?>>Produk Susu</option>
+            <option value="Produk Kebersihan" <?= $barang["kategori"] === 'Produk Kebersihan' ? 'selected' : '' ?>>Produk Kebersihan</option>
+            <option value="Produk Kesehatan" <?= $barang["kategori"] === 'Produk Kesehatan' ? 'selected' : '' ?>>Produk Kesehatan</option>
+            <option value="Alat Tulis" <?= $barang["kategori"] === 'Alat Tulis' ? 'selected' : '' ?>>Alat Tulis</option>
+            <option value="Ice Cream" <?= $barang["kategori"] === 'Ice Cream' ? 'selected' : '' ?>>Ice Cream</option>
+            <option value="Obat Obatan" <?= $barang["kategori"] === 'Obat Obatan' ? 'selected' : '' ?>>Obat Obatan</option>
+            <option value="Permen" <?= $barang["kategori"] === 'Permen' ? 'selected' : '' ?>>Permen</option>
+            <option value="Voucher TRI" <?= $barang["kategori"] === 'Voucher TRI' ? 'selected' : '' ?>>Voucher TRI</option>
+            <option value="Voucher Telkomsel" <?= $barang["kategori"] === 'Voucher Telkomsel' ? 'selected' : '' ?>>Voucher Telkomsel</option>
+            <option value="Voucher Indosat" <?= $barang["kategori"] === 'Voucher Indosat' ? 'selected' : '' ?>>Voucher Indosat</option>
+            <option value="Rokok dan Aksesorisnya" <?= $barang["kategori"] === 'Rokok dan Aksesorisnya' ? 'selected' : '' ?>>Rokok dan Aksesorisnya</option>
+            <option value="Lainnya" <?= $barang["kategori"] === 'Lainnya' ? 'selected' : '' ?>>Lainnya</option>
         </select>
       </div>
 
