@@ -130,9 +130,15 @@
     const alertBerhasil = document.getElementById("alert-berhasil");
     const closeAlert = document.getElementById("close-alert");
 
+    // Event listener untuk tombol close
     closeAlert.addEventListener("click", function() {
       alertBerhasil.style.display = "none";
     });
+
+    // Mengatur elemen untuk hilang dengan sendirinya setelah bbrapa detik
+    setTimeout(function() {
+      alertBerhasil.style.display = "none";
+    }, 5000);
   </script>
 </html>
 </body>

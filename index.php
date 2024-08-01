@@ -103,14 +103,14 @@
             <td><?= "Rp" . number_format($barangs["harga"]) ?></td>
             <td><?= $barangs["deskripsi"] ?></td>
             <td>
-              <a href="app/update.php?id=<?= $barangs["id"] ?> ">
-                <button type="button"> <!-- update tombol-->
+              <a href="app/update.php?id=<?= $barangs["id"] ?>">
+                <button type="button" title="Ubah barang..."> <!-- update tombol-->
                   <span class="material-symbols-outlined"> edit_square</span>
                 </button>
               </a>
 
               <a href="app/hapus.php?id=<?= $barangs["id"] ?>" onclick="return confirm('Yakin ingin menghapus barang, <?= $barangs['nama'] ?>')">
-                <button type="button"> <!-- delete tombol-->
+                <button type="button" title="Hapus barang..."> <!-- delete tombol-->
                   <span class="material-symbols-outlined">delete</span>
                 </button>
               </a>
@@ -127,14 +127,17 @@
     const alertBerhasil = document.getElementById("alert-berhasil");
     const closeAlert = document.getElementById("close-alert");
 
+    // Event listener untuk tombol close
     closeAlert.addEventListener("click", function() {
       alertBerhasil.style.display = "none";
-
-      setTimeout( function(){
-        alertBerhasil.style.display = "none";
-      }, 5000);
     });
+
+    // Mengatur elemen untuk hilang dengan sendirinya setelah bbrapa detik
+    setTimeout(function() {
+      alertBerhasil.style.display = "none";
+    }, 5000);
   </script>
+  
   <!-- jQuery CDN dan datatable js -->
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script src="DataTables/datatables.js"></script>
