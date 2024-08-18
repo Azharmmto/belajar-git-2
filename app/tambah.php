@@ -21,7 +21,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daftar Barang</title>
+  <title>Tambah Barang</title>
 
   <link rel="stylesheet" href="css/tambah.css" />
 
@@ -39,7 +39,7 @@
 <body>
 
   <nav>
-    <div class="judul">
+    <div class="judul d-flex align-items-center fs-3">
       <h1>
         <a href="#">Kios Na'im</a>
       </h1> 
@@ -78,7 +78,8 @@
         <label for="kategori" class="form-label fw-medium">Kategori Barang</label>
         <select class="form-select" aria-label="Default select example" id="kategori" name="kategori" required>
           <option selected>Pilih kategori...</option>
-          <option value="Makanan dan Minuman">Makanan dan Minuman</option>
+          <option value="Makanan dan Minuman">Makanan</option>
+          <option value="Makanan dan Minuman">Minuman</option>
           <option value="Bahan Pokok">Bahan Pokok</option>
           <option value="Bumbu Dapur">Bumbu Dapur</option>
           <option value="Produk Susu">Produk Susu</option>

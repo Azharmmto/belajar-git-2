@@ -19,7 +19,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daftar Barang</title>
+  <title>Daftar Harga Barang</title>
 
   <!-- my css -->
   <link rel="stylesheet" href="style.css" />
@@ -68,8 +68,10 @@
   <main>
     <header>
       <h2>
-          Daftar Harga 
+          Daftar Harga Barang
       </h2>
+
+      <hr>
 
       <div class="tambah">
         <a href="app/tambah.php">

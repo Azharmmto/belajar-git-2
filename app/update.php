@@ -30,7 +30,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daftar Barang</title>
+  <title>Update Barang</title>
 
   <link rel="stylesheet" href="css/tambah.css" />
 
@@ -79,7 +79,8 @@
         <label for="kategori" class="form-label fw-medium">Kategori Barang</label>
           <select class="form-select" aria-label="Default select example" id="kategori" name="kategori" required>
             <option selected>Pilih kategori...</option>
-            <option value="Makanan dan Minuman" <?= $barang["kategori"] === 'Makanan dan Minuman' ? 'selected' : '' ?>>Makanan dan Minuman</option>
+            <option value="Makanan" <?= $barang["kategori"] === 'Makanan' ? 'selected' : '' ?>>Makanan</option>
+            <option value="Minuman" <?= $barang["kategori"] === 'Minuman' ? 'selected' : '' ?>>Minuman</option>
             <option value="Bahan Pokok" <?= $barang["kategori"] === 'Bahan Pokok' ? 'selected' : '' ?>>Bahan Pokok</option>
             <option value="Bumbu Dapur" <?= $barang["kategori"] === 'Bumbu Dapur' ? 'selected' : '' ?>>Bumbu Dapur</option>
             <option value="Produk Susu" <?= $barang["kategori"] === 'Produk Susu' ? 'selected' : '' ?>>Produk Susu</option>
